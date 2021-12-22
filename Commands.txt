@@ -1,0 +1,69 @@
+git bash here 					// dentro da pasta
+
+git init
+
+git config --global user.name "Nome Aqui"
+
+git config user.name				// verifica se foi
+
+git config --global user.email "E-mail Aqui"
+
+git cofig -user.email                           // verifica se foi
+
+git status
+
+git add index.txt				// apresenta o(s) arquivo(s) ( git add *)
+
+git commit -m "First commit"			// commita com mensagem/ comentario
+
+* alterado o arquivo:
+
+git log						// historico de commits
+
+git status					// situação dos arquivos na pasta
+
+git diff					// diferenças entre o atual na pasta e o ultimo commit
+
+git add index.txt				// apresenta o(s) arquivo(s) ( git add *)
+
+git commit -m "Second commit"			// commita com mensagem/ comentario
+
+git log
+
+git status
+
+git checkout hash				// escolhe o commit pra voltar
+
+git checkout master				// volta pro head
+
+git clean -f					// limpa os arquivos nao commitados
+
+git reset --hard HEAD~0				
+
+git checkout hash contato.txt			// volta apenas o arquivo escolhido
+
+git revert HEAD~1				// volta um commit pra trás, gerando log
+esc :q
+
+git tag v2					// nomeia a HEAD com tag
+
+git branch					// mostra todas as branch linha do tempo
+
+git branch v3					// nova branch
+
+git checkout v3					// navega tmb entre branchs
+
+git merge master				// mescla as branch
+esc:q
+
+touch .gitignore				// cria o arquivo
+adicionamos os arquivos a ser ignorado
+
+git remote add origin "http..."			// sincroniza o repositorio remoto
+
+git remote -v 					// mostra os repositorios
+
+git branch -M main				// sobe os arquivos para o remoto "origin"
+git push -u origin main
+
+git clone "http..." 				// clona o repositorio criado-vazio do hub
